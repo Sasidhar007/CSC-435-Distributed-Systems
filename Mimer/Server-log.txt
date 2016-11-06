@@ -1,0 +1,139 @@
+/* Output on the Command Prompt on which MyWebServer.java is being executed. */
+
+C:\Users\msasi\Desktop\Mimer>java MyWebServer
+C:\Users\msasi\Desktop\Mimer>java MyWebServer
+Sasi's WebServer is listening at port:  2540
+
+Sasi's WebServer is connecting to The Backchannel at port:2570
+In BC Looper thread, waiting for 2570 connections
+SASi's server is sending directory: /
+Called BC worker.
+The XML marshaled data:
+<myDataArray>
+  <num__lines>7</num__lines>
+  <lines>
+    <string></string>
+    <string>hey</string>
+    <string>i am sending the following 7 lines. 2 have used</string>
+    <string>3rd line</string>
+    <string>4th line</string>
+    <string>5th line</string>
+    <string>6th line</string>
+    <string>7th line</string>
+  </lines>
+</myDataArray>
+
+Here is the restored data:
+
+hey
+i am sending the following 7 lines. 2 have used
+3rd line
+4th line
+5th line
+6th line
+
+
+C:\Users\msasi\Desktop\Mimer>
+
+
+/*The Output which is displayed on the Command prompt which is triggered by calling the mimer-data.xyz from the mimer-call.html page from the browser which triggers a back channel connection */
+
+C:\Users\msasi\Desktop\Mimer>rem This is shim.bat
+
+C:\Users\msasi\Desktop\Mimer>rem Change this to your development directory:
+
+C:\Users\msasi\Desktop\Mimer>cd C:\Users\msasi\Desktop\Mimer\
+
+C:\Users\msasi\Desktop\Mimer>echo "We are now in a shim called from the Web Browser"
+"We are now in a shim called from the Web Browser"
+
+C:\Users\msasi\Desktop\Mimer>echo Arg one is: mimer-data.xyz
+Arg one is: mimer-data.xyz
+
+C:\Users\msasi\Desktop\Mimer>rem Change this to point to your Handler directory:
+
+C:\Users\msasi\Desktop\Mimer>cd C:\Users\msasi\Desktop\Mimer\Handler
+
+C:\Users\msasi\Desktop\Mimer\Handler>pause
+Press any key to continue . . .
+
+C:\Users\msasi\Desktop\Mimer\Handler>rem have to set classpath in batch, passing as arg does not work.
+
+C:\Users\msasi\Desktop\Mimer\Handler>rem Change this to point to your own Xstream library files:
+
+C:\Users\msasi\Desktop\Mimer\Handler>set classpath=C:\Users\msasi\Desktop\Mimer\Handler;C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\xstream-1.2.1.jar;C:\Program Files (x86)\Java\jre1.8.0_101\lib\ext\xpp3_min-1.1.3.4.O.jar;
+
+C:\Users\msasi\Desktop\Mimer\Handler>rem pass the name of the first argument to java:
+
+C:\Users\msasi\Desktop\Mimer\Handler>java -Dfirstarg=mimer-data.xyz BCHandler
+Sasi's back channel & handler is being executed.
+
+Using server: localhost, Port: 2570
+
+data is:
+hey
+data is:hey
+i am sending the following 7 lines. 2 have used
+data is:i am sending the following 7 lines. 2 have used
+3rd line
+data is:3rd line
+4th line
+data is:4th line
+5th line
+data is:5th line
+6th line
+data is:6th line
+7th line
+Number of lines is:7
+The XML Output is:
+<myDataArray>
+  <num__lines>7</num__lines>
+  <lines>
+    <string></string>
+    <string>hey</string>
+    <string>i am sending the following 7 lines. 2 have used</string>
+    <string>3rd line</string>
+    <string>4th line</string>
+    <string>5th line</string>
+    <string>6th line</string>
+    <string>7th line</string>
+  </lines>
+</myDataArray>
+Blocking on acknowledgment from Server...
+Acknowledging Back Channel Data Receipt
+
+C:\Users\msasi\Desktop\Mimer\Handler>pause
+Press any key to continue . . .
+
+C:\Users\msasi\Desktop\Mimer\Handler>
+
+
+/*The output which will be recorded in the mimer.output file which is located in the C:Temp folder is as follows basically this is the Marshalled data*/
+
+First arg to Handler is: WillBeFileName
+
+<myDataArray>
+
+  <num__lines>7</num__lines>
+
+  <lines>
+    
+	<string></string>
+    
+	<string>hey</string>
+    
+	<string>i am sending the following 7 lines. 2 have used</string>
+    
+	<string>3rd line</string>
+    
+	<string>4th line</string>
+    
+	<string>5th line</string>
+    
+	<string>6th line</string>
+   
+	<string>7th line</string>
+  
+  </lines>
+
+</myDataArray>

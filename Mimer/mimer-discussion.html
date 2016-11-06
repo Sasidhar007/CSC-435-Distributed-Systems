@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Mimer Discussion</title>
+</head>
+<body>
+<h2>CSC 435 - Distributed Systems - Mimer Discussion By Sasidhar Mukthinuthalapati</h2>
+<p>First, I really learnt a lot through this assignment. Though I was familiarised by the topic of MIME Types during the MyWebServer assignment, this assignment gave us the oppurtunity to create our own MIME type.</p>
+<p>The most diffucult part of this assignment was the assignment of the paths in the batch files. Hats off to Dr. Elliott for ellaborating about the whole functionalitiy of the program that we are working on. He also provided us with most of the code all we had to do is keeps those pieces in their respective places.</p>
+<p>The steps that I had followed to make this work are as follows</p>
+<ol>
+<li>I had made modifications to the MyWebServer program to handle the custom MIME type (.xyz). So when we select a file with the extension .xyz then we have to call the handler for that particular extension which in this case is the Handler.java</li>
+<li>After the modifications, I added the MIME Type in the Registor Editor. TO be double sure I made sure that when .xyz file is encountered the shim.bat file was used to call the Handle program using the Openwith option in windows. </li>
+<li>Then I downloaded and made necessary changes to the BCCLient program to create a backchannel to the MyWebServer. Changes also had to be made to the MyWebServer program in order for it to listen on port 2570 to get the XML Marshalled data form the BCClient program. We used the BC-Looper-code which was used inside the MyWebServer program to make it to listen to the backchannel and also server the webbrowser. This is similar to the modeswitching concept in JokeServer where we Server the client and also listen to any changes in state of the JOkeServer.</li>
+<li>Initially when we called the mimer-data.xyz from the browser, which contained 5 lines of data, then the browser called the handler to display those 5 lines on a seperate windows command prompy.</li>
+<li>When we execute the BCCLient, we can send the data manually to the MyWebServer program. NOTE: The MyWebServer program must be running too.</li>
+<li>The marshalled data will be stored in the temp folder in a file called mimer.output and this can also be checked manually. So basically, from the Back channel we are sending data in XML format this will create a kind of interrupt in the MyWebServer program and on its command prompt will display the data that has been marshalled through the back channel.</li>
+<li>Finally, I combined the BCClient and Handler java programs to BCHandler and made neccessary changes to the shim.bat file. Then we execute the MyWebServer program and from the browser when we click on mimer-call.html and in that we select the mimer-data.xyz, a new window will open in which the BCHandler will be called. Here we type in 7 lines of data which will be marshalled through the back channel to the MyWebServer program. It'll be displayed on the command prompt on which the MyWebServer program is being executed. This data will also be stored in the C:temp\mimer.output file. This is the local copy which will be stored on the harddisk. </li>
+<li>In this program I feel that mainly the Step 5 I might have some kinda problem. I am assuming that we are calling the BCHandler fromt the WebBrowser and we will type in the data which will later be displayed on the MyWebServer command prompt and also in the temp file mimer.output. Sometimes windows is not able to find the BChandler and someties it is able to find it but I am pretty much confident till the Step 4. I somehow feel less confident in understanding step 5 I am not sure whether I got it correct or not.</li>
+</ol>
+<p>I am very happy with what I've learnt while doing this assignment.</p>
+</body>
+</html>
