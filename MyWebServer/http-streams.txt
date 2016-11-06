@@ -1,0 +1,22 @@
+C:\Users\msasi\Desktop\MWS>java MyListener
+Sasi's listenervis starting up and is listening at port 2540.
+
+The client's browser say's:       GET /lion.html HTTP/1.1
+Host name:localhost
+2016/10/09 19:37:34
+Content Type: text/html
+
+
+NOTE: Here the content Length is missing because I am not retrieving the *.html/txt file and hence no length.
+
+
+
+/*This is the output that I captured using wireshark and applying the http filter*/
+
+Content-Type: text/html
+Content-Length: 102
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Headers: Content-Type
+Connection: Keep-Alive
+Date: Mon, 10 Oct 2016 02:19:56 GMT

@@ -1,0 +1,112 @@
+C:\Users\msasi\Desktop\MyWebServer>java MyWebServer
+Sasi's WebServer is listening at port:  2540
+
+SASi's server is sending directory: /
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:dog.txt
+Content Type:text/plain
+Content Length:94
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:http-streams.txt
+Content Type:text/plain
+Content Length:685
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:lion.html
+Content Type:text/html
+Content Length:102
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:MyWebServer.class
+Content Type:text/plain
+Content Length:954
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:MyWebServer.java
+Content Type:text/plain
+Content Length:10200
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:serverlog.txt
+Content Type:text/plain
+Content Length:1014
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
+
+
+SASi's server is sending the following FILE:favicon.ico
+Content Type:text/plain
+Content Length:116288
